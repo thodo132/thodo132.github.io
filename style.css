@@ -1,0 +1,36 @@
+:root {
+  --background: #001524;
+  --backgroundLight: #15616d;
+  --accent: #78290f;
+  --accentLight: #ff7d00;
+  --textcolor: #ffecd1;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.click-me {
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: var(--textcolor);
+  padding: 20px 40px;
+  background-color: var(--accent);
+  box-shadow: 0 0 50px var(--accent);
+  border-radius: 5px 0 5px 0;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  cursor: pointer;
+}
+
+.click-me:hover {
+  color: var(--background);
+  background-color: var(--accentLight);
+  box-shadow: 0 0 80px var(--accentLight);
+}
