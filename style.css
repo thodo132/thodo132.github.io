@@ -1,13 +1,49 @@
 :root {
-  --background: #001524;
-  --backgroundLight: #15616d;
-  --accent: #78290f;
-  --accentLight: #ff7d00;
-  --textcolor: #ffecd1;
+  --background: #0d0221;
+  --backgroundLight: #0f084b;
+  --accent: #26408b;
+  --accentLight: #a6cfd5;
+  --textcolor: #c2e7d9;
+  --white-creme: #fff5ea;
+  --white-cold: #f8f7f4;
+  --black: ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
+  max-height: 100vh;
   background-color: var(--background);
+  background-image: url("mountain_bg.jpg");
+  background-size: cover;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  margin: 0 auto;
+  backdrop-filter: blur(10px);
+}
+
+.headingText {
+  position: relative;
+  position: sticky;
+  margin: 0 auto;
+  color: var(--textcolor);
+
+  padding: 50px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2em;
 }
 
 .click-me {
@@ -15,11 +51,10 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 
-  color: var(--textcolor);
+  color: var(--background);
   padding: 20px 40px;
-  background-color: var(--accent);
-  box-shadow: 0 0 50px var(--accent);
-  border-radius: 5px 0 5px 0;
+  background-color: var(--white-creme);
+  border-radius: 3px;
 
   position: absolute;
   left: 50%;
